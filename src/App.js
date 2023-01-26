@@ -5,6 +5,7 @@ import { HashRouter as Router, Routes, Route}
   from 'react-router-dom';
 import Home from './pages/home'
 import Login from './pages/login'
+import EnterCode from './pages/enterCode'
 
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
           <Routes>
             <Route path = '/home' element ={<Home />} />
             <Route path = '/login' element ={<Login />} />
-            {/* 👇️ react router link */}
+              <Route path   ='/enter-code' element= {<EnterCode />}/>
           </Routes>
         </div>
       </Router>

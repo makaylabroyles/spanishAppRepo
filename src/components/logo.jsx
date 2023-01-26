@@ -1,11 +1,11 @@
 import React from 'react';
-import logo from '../Artboard 1.png' // Tell Webpack this JS file uses this image
+import logo from '../spanishLabLogo.png' // Tell Webpack this JS file uses this image
 
 console.log(logo);
 
 function Header() {
     // Import result is the URL of your image
-    return <img src={logo} alt="Logo" width="" height="" />;
+    return <img src={logo} alt="Logo" width="" height="" class = "spanishLabLogo" />;
 }
 
 export default Header;

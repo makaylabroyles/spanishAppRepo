@@ -22,7 +22,7 @@ const Login = () => {
                 </div><br />
                 <div class= "center">
                     <button onClick={routeChange}>
-                        Login
+                        LOGIN
                     </button>
                     <Routes>
                         <Route path="/home" element={<Home />} />

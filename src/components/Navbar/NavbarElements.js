@@ -1,9 +1,10 @@
 import { FaBars } from "react-icons/fa";
 import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
+import "react-bootstrap"
 
 export const Nav = styled.nav`
-  background: #FFFF;
+  background: #2F4B5D;
   height: 85px;
   display: flex;
   justify-content: space-between;
@@ -12,7 +13,7 @@ export const Nav = styled.nav`
 `;
 
 export const NavLink = styled(Link)`
-  color: #808080;
+  color: #FFF;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -20,7 +21,7 @@ export const NavLink = styled(Link)`
   height: 100%;
   cursor: pointer;
   &.active{
-    color: #A22C28;
+    color: #009CDC;
   }
 `;
 
@@ -29,7 +30,7 @@ export const Bars = styled(FaBars)`
   color: #808080;
   @media screen and (max-width: 768px) {
     display: block;
-    position: absolute;
+    //position: absolute;
     top: 0;
     right: 0;
     transform: translate(-100%, 75%);
@@ -50,5 +51,14 @@ white-space: nowrap; */
   @media screen and (max-width: 768px) {
     display: none;
   }
+  .spanishLabLogo{
+    margin-top: 90px;
+    width: 298px;
+    height: 485px;
+    //align-content: center;
+  }
   
+  .loginNav{
+    float: right;
+  }
 `;

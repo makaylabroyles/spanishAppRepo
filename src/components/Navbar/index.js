@@ -1,7 +1,8 @@
 import React from "react";
-import { Nav, NavLink, NavMenu }
+import { Nav, NavLink, NavMenu}
     from "./NavbarElements";
 import Logo from "../logo"
+import "react-bootstrap";
 
 const Navbar = () => {
     return (
@@ -11,10 +12,13 @@ const Navbar = () => {
                     <NavLink to="/home" activeStyle>
                         Home
                     </NavLink>
-                    <NavLink class = "loginNav" to="/login" activeStyle>
-                        Login
+                    <NavLink class = "" to="/login" activeStyle>
+                        LOGIN
                     </NavLink>
-                    <Logo class = "logo" />
+                    <div id = "logoDiv">
+                        <Logo/>
+                    </div>
+
                 </NavMenu>
             </Nav>
         </>
