@@ -1,14 +1,15 @@
 import React from "react";
-import Logo from "../components/logo";
-import enterCode from "./enterCode";
+import enterCode from "../pages/enterCode";
+import enter from "../pages/enterCode.js"
 import {redirect, Route, Routes, useNavigate, withRouter} from "react-router-dom";
+import EnterCode from "../pages/enterCode";
 const Home = () => {
     let navigate = useNavigate();
     const routeChange = () => {
-        navigate('/enterCode');
+        navigate('/enter-code');
     }
     return (
-        <div className="App">
+        <div className="homePage">
             <h2>CHOOSE A THEME</h2>
             <div>
                 <p>[Theme 1]</p>
@@ -17,13 +18,12 @@ const Home = () => {
                 <p>[Theme 4]</p>
                 <p>[Theme 5]</p>
                 <p>[Theme 6]</p>
-                <div>
+                <div className="enterCode">
                     <button onClick={routeChange}>
                         Submit
                     </button>
                     <Routes>
-                        <Route path="/enterCode" element={<enterCode />}/>
-                            <enterCode />
+                        <Route path ="/enter-code" element={<EnterCode />} />
                     </Routes>
                 </div>
             </div>

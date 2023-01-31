@@ -1,8 +1,9 @@
 import React from "react";
+import {redirect, Route, Routes, useNavigate, withRouter} from "react-router-dom";
 
 const enterCode = () => {
     return (
-        <div className="App">
+        <div className="enterCodePage">
             <h2>GO TO WWW.SPANISHLAB.COM/ENTERCODE</h2>
             <div>
                 <p>SPANISH STORY CODE: </p>
@@ -11,6 +12,6 @@ const enterCode = () => {
             </div>
         </div>
     );
-}
+};
 
-export default enterCode();
+export default enterCode;

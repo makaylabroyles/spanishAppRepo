@@ -1,8 +1,6 @@
 .App {
-  text-align: center;
   background: #2F4B5D;
-  color: #FFF;
-}
+  color: #FFF;}
 
 .App-logo {
   height: 40vmin;
@@ -39,3 +37,58 @@
   .loginNav{
     align-content: end;
   }
+.loginContainer{
+  background: #FFFFFF;
+  width: 350px;
+  height: 450px;
+  border-radius: 20px;
+  padding: 20px;
+}
+.loginInputs{
+  padding: 10px;
+  color: #2F4B5D;
+}
+input{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+.loginInputs label {
+  justify-content: left;
+  text-align: left;
+}
+.loginContainer h2{
+  color: #2F4B5D;
+  text-align: center;
+  font-weight: normal;
+}
+form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loginPage{
+  padding: 100px;
+}
+.loginButton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+}
+.loginPage button{
+  width: 75%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: #459AD7;
+  color: #FFFFFF;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+}
+.homePage{
+  padding: 100px;
+
+}

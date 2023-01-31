@@ -9,24 +9,26 @@ const Login = () => {
         navigate('/home');
     }
     return (
-        <div id= "userInput">
-            <h1 class = "LoginHeader">Login</h1>
+        <div className= "loginPage">
             <form>
-                <div>
+                <div className="loginContainer">
+                    <h2>Login</h2>
+                <div className= "loginInputs">
                     <label htmlFor="username">Username</label>
                     <input id="username" type="text" name="firstName" />
                 </div>
-                <div>
+                <div className="loginInputs">
                     <label htmlFor="password">Password</label>
                     <input id="username" type="text" name="username" />
                 </div><br />
-                <div class= "center">
+                <div className="loginButton">
                     <button onClick={routeChange}>
-                        LOGIN
+                        Login
                     </button>
                     <Routes>
                         <Route path="/home" element={<Home />} />
                     </Routes>
+                </div>
                 </div>
             </form>
         </div>

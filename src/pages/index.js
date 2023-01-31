@@ -6,7 +6,7 @@ import "react-bootstrap"
 const Navbar = () => {
     return (
         <>
-            <Nav className="container-fluid">
+            <Nav>
                 <NavMenu>
                     <NavLink to="/home" activeStyle>
                         Home
