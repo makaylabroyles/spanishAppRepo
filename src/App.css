@@ -71,11 +71,16 @@ form{
 .loginPage{
   padding: 100px;
 }
-.loginButton{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 30px;
+.primaryButton{
+  width: 75%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: #459AD7;
+  color: #FFFFFF;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
 }
 .loginPage button{
   width: 75%;
@@ -90,5 +95,19 @@ form{
 }
 .homePage{
   padding: 100px;
+}
+.standardPage{
+  text-align: center;
+  padding: 100px;
+  align-items: center;
+  justify-content: center;
+}
+.standardPage h2{
+  font-weight: normal;
+}
+.genCodeContainer{
+  border: medium solid #FFFFFF;
+  font-size: 30px;
+  width: 75%;
 
 }

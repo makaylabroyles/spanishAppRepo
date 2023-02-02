@@ -21,7 +21,7 @@ const Login = () => {
                     <label htmlFor="password">Password</label>
                     <input id="username" type="text" name="username" />
                 </div><br />
-                <div className="loginButton">
+                <div className="primaryButton">
                     <button onClick={routeChange}>
                         Login
                     </button>

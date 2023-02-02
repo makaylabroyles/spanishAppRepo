@@ -3,6 +3,7 @@ import enterCode from "../pages/enterCode";
 import enter from "../pages/enterCode.js"
 import {redirect, Route, Routes, useNavigate, withRouter} from "react-router-dom";
 import EnterCode from "../pages/enterCode";
+import themePage from "./themePage";
 const Home = () => {
     let navigate = useNavigate();
     const routeChange = () => {
@@ -10,24 +11,15 @@ const Home = () => {
     }
     return (
         <div className="homePage">
-            <h2>CHOOSE A THEME</h2>
+            <h1>Choose type of play</h1>
             <div>
-                <p>[Theme 1]</p>
-                <p>[Theme 2]</p>
-                <p>[Theme 3]</p>
-                <p>[Theme 4]</p>
-                <p>[Theme 5]</p>
-                <p>[Theme 6]</p>
-                <div className="enterCode">
-                    <button onClick={routeChange}>
-                        Submit
-                    </button>
-                    <Routes>
-                        <Route path ="/enter-code" element={<EnterCode />} />
-                    </Routes>
-                </div>
+                <button onClick={routeChange}>
+                    Ready to Play
+                </button>
+                <Routes>
+                    <Route path ="/enter-code" element={<EnterCode />} />
+                </Routes>
             </div>
-
         </div>
     );
 };

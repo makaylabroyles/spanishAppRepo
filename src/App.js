@@ -3,9 +3,10 @@ import './App.css';
 import Navbar from './components/Navbar'
 import { HashRouter as Router, Routes, Route}
   from 'react-router-dom';
-import Home from './pages/home';
+import themePage from './pages/themePage';
 import Login from './pages/login';
 import EnterCode from './pages/enterCode';
+import Home from "./pages/home";
 
 
 
@@ -15,7 +16,8 @@ function App() {
         <div className="App">
           <Navbar />
           <Routes>
-            <Route path = '/home' element ={<Home />} />
+              <Route path = '/home'  element={<Home />} />
+            <Route path = '/choose-a-theme' element ={<themePage />} />
             <Route path = '/login' element ={<Login />} />
             <Route path = '/enter-code'  element={<EnterCode />} />
           </Routes>
