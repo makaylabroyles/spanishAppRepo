@@ -21,8 +21,8 @@ const Login = () => {
                     <label htmlFor="password">Password</label>
                     <input id="username" type="text" name="username" />
                 </div><br />
-                <div className="primaryButton">
-                    <button onClick={routeChange}>
+                <div className="centerContainer">
+                    <button onClick={routeChange} className= "primaryButton">
                         Login
                     </button>
                     <Routes>

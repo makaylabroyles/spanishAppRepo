@@ -4,24 +4,16 @@ import enter from "../pages/enterCode.js"
 import {redirect, Route, Routes, useNavigate, withRouter} from "react-router-dom";
 import EnterCode from "../pages/enterCode";
 import themePage from "./themePage";
-const Home = () => {
+const Account = () => {
     let navigate = useNavigate();
     const routeChange = () => {
         navigate('/enter-code');
     }
     return (
-        <div className="homePage">
-            <h1>Choose type of play</h1>
-            <div>
-                <button className="primaryButton" onClick={routeChange}>
-                    Ready to Play
-                </button>
-                <Routes>
-                    <Route path ="/enter-code" element={<EnterCode />} />
-                </Routes>
-            </div>
+        <div className="standardPage">
+            <h1>Account Page</h1>
         </div>
     );
 };
 
-export default Home;
+export default Account;

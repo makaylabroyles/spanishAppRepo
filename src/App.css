@@ -60,6 +60,7 @@ input{
 }
 .loginContainer h2{
   color: #2F4B5D;
+  margin-top: 50px;
   text-align: center;
   font-weight: normal;
 }
@@ -70,9 +71,10 @@ form{
 }
 .loginPage{
   padding: 100px;
+  margin-top: 50px;
 }
 .primaryButton{
-  width: 75%;
+  width: 200px;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
@@ -81,24 +83,14 @@ form{
   font-size: 16px;
   border: none;
   border-radius: 5px;
-}
-.loginPage button{
-  width: 75%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  background-color: #459AD7;
-  color: #FFFFFF;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
+  text-wrap: none;
 }
 .homePage{
   padding: 100px;
 }
 .standardPage{
   text-align: center;
-  padding: 100px;
+  padding: 175px;
   align-items: center;
   justify-content: center;
 }
@@ -106,8 +98,16 @@ form{
   font-weight: normal;
 }
 .genCodeContainer{
-  border: medium solid #FFFFFF;
+  border: 2px solid #FFFFFF;
+  border-radius: 5px;
   font-size: 30px;
-  width: 75%;
-
+  width: 60%;
+  margin: 50px;
+}
+.centerContainer{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }

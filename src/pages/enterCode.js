@@ -22,11 +22,12 @@ const enterCode = () => {
     return (
         <div className="standardPage">
             <h2>GO TO WWW.SPANISHLAB.COM/ENTERCODE</h2>
-            <div>
+            <div className= "centerContainer">
                 <p>SPANISH STORY CODE: </p>
                 <div className= "genCodeContainer">
                     <p>{makeid(3)+ "-"+ makeid(3) + "-" + makeid(3)}</p>
                 </div>
+            </div>
                 <div>
                     <button onClick={routeChange} className="primaryButton">
                         Ready to Play
@@ -36,7 +37,6 @@ const enterCode = () => {
                     </Routes>
                 </div>
             </div>
-        </div>
     );
 };
 
