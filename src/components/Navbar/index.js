@@ -20,6 +20,7 @@ const Navbar = () => {
                             <div className= "dropdown-content">
                                 <NavLink href="#" to = '/home'>Home</NavLink>
                                 <NavLink href="#" to = "/account">Account</NavLink>
+                                <NavLink href="#" to = '/create-story'>Create Story</NavLink>
                             </div>
                         </div>
                     </div>

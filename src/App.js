@@ -8,6 +8,7 @@ import Login from './pages/login';
 import EnterCode from './pages/enterCode';
 import Home from "./pages/home";
 import Account from "./pages/account";
+import CreateStory from "./pages/createStory"
 
 
 
@@ -18,10 +19,11 @@ function App() {
           <Navbar />
           <Routes>
               <Route path = '/home'  element={<Home />} />
-            <Route path = '/choose-a-theme' element = {<ThemePage />} />
-            <Route path = '/login' element ={<Login />} />
-            <Route path = '/enter-code'  element={<EnterCode />} />
+              <Route path = '/choose-a-theme' element = {<ThemePage />} />
+              <Route path = '/login' element ={<Login />} />
+              <Route path = '/enter-code'  element={<EnterCode />} />
               <Route path= '/account' element={<Account />} />
+              <Route path ='/create-story' element={<CreateStory />} />
           </Routes>
         </div>
       </Router>
